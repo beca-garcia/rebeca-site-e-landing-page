@@ -1,0 +1,91 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .mockup-box img.imagem {
+        width: 40rem;
+    }
+
+    .lines .line-2 {
+        width: 52rem;
+        
+    }
+    
+    .lines .line-3 {
+        width: 38.4rem;
+        height: 2px;
+        background: var(--line-color02);
+    }
+
+    .search form {
+        width: 32rem;  
+    }
+
+    .team .mockup-box img.imagem {
+        width: 30.4rem;
+    }    
+}
+
+@media (min-width: 1024px) and (max-width: 2600px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .lines div.line-2 {
+        width: 52rem;        
+    }
+    
+    .lines div.line-3 {
+        width: 38.4rem;
+    }
+   
+    .desire div.flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mockup-box img.imagem {
+        width: 38.4rem;
+    }
+
+    .search div.flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .search .txt-leads {
+        width: 55.2rem;
+    }
+
+    .search form {
+        width: 34.4rem;  
+    }
+
+    .team div.flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .team .txt-leads {
+        width: 55.2rem;
+    }
+
+    .team div.mockup-box img.imagem {
+        width: 35.2rem;
+    } 
+
+    /*  */
+
+
+
+
+    /*     
+
+    
+
+   
+
+    
+    */
+
+}
+

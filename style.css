@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --line-color01: #13293d;
+    --line-color02: #006494;    
+    --txt-color: #030303;    
+    --form-line: #247ba0;
+    --form-border: #247ba0; 
+    --button: #247ba0;
+    --button-color: #e8f1f2;
+    --light-white: #ffffff;    
+    --icon: #006494;
+    --shadow: #13293d;
+    --bgc-color: #e8f1f2;
+    --headline: #13293d;
+}
+
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    font-family: 'REM', sans-serif;
+}
+
+/* COMPORTAMENTO GERAL TAGS */
+section {
+    padding-block: 3.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 1.6rem;
+}
+
+/* COMPORTAMENTO GERAL CLASSES */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--headline);
+    margin-bottom: 1.6rem;
+}
+
+.subtitle {
+    font-size: 3.2rem;    
+    line-height: 150%;
+    color: var(--headline);
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+/* SEPARADOR DE SEÇÃO */
+section.sectionSeparation {
+    padding-block: 3.2rem;
+}
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.line-1 {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: var(--line-color01);
+}
+
+.line-2 {
+    width: 28rem;
+    height: 2px;
+    background: var(--line-color02);
+}
+
+.line-3 {
+    width: 20rem;
+    height: 2px;
+    background: var(--line-color02);
+}
+
+/* DESIRE */
+section#desire {
+    padding-top: 5.6rem;
+}
+.desire .flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.desire .txt-leads 
+.mockup-box {
+    margin-top: 3.2rem;
+}
+
+.mockup-box .imagem {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    animation: animarImagem 1.5s infinite alternate;
+}
+
+@keyframes animarImagem {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }    
+}
+
+/* SEARCH */
+.search .flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    box-shadow: 2px 2px 8px var(--shadow);
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+    width: 28rem;  
+    margin-block: 3.2rem;  
+}
+
+form h3 {
+    color: var(--headline);
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+form p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+form .form-box {
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem 0;
+}
+
+.form-box label {  
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.form-box .input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--form-line); 
+}
+
+form input[type=submit] {
+    padding: 1.6rem 5.6rem;
+    border: none;
+    border-radius: 3.2rem;
+    background-color: var(--button);
+    /* color: var(--txt-color); */
+    color: var(--button-color);
+    font-weight: 800;
+    font-size: 1.4rem;
+    display: block;
+    margin: 0 auto;
+    animation: animarBotao .5s infinite alternate;
+}
+
+@keyframes animarBotao {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+    
+}
+
+form input[type=submit]:hover {
+    border-bottom: 5px solid #468FAF;
+}
+
+/* TEAM */
+.team .flex {
+    flex-direction: column-reverse;
+}
+
+.team .mockup-box .imagem {
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px var(--shadow);
+    animation: none;
+}
+
+/* BOTÃO WHATSAPP */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 1.6rem;
+    right: 3.2rem;
+    z-index: 99;
+}
+
+.btn-whatsapp img {
+    max-width: 56px;
+    transition: transform 0.4s;
+}
+
+.btn-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 10.4rem;
+    top: 1.6rem;
+    left: -12rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    background-color: var(--icon);
+    color: var(--light-white);
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* RODAPÉ */
+footer {
+    padding: 1.6rem 0;
+}
+
+footer .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .contatos {
+    margin-block: 0.8rem;
+}
+
+footer .contatos a i {
+    font-size: 2.4rem;
+    color: var(--icon);
+    margin-inline: 0.8rem;
+    transform: .2s;
+}
+
+.contatos a i:hover {
+    transform: scale(1.2);
+}
+
+footer .politicas {
+    margin-block: 0.8rem;
+}
+
+footer .politicas a {
+    text-decoration: none;
+    color: var(--txt-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-inline: 0.8rem;
+}
+
+.politicas a:hover {
+    color: var(--headline);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+footer p i.heart {
+    color: red;
+    animation: animarCoracao .2s infinite alternate;
+}
+
+@keyframes animarCoracao {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+    
+}
