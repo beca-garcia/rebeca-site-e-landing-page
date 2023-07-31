@@ -46,6 +46,20 @@ body {
     margin-top: 2.4rem;
 }
 
+.txt-box a {
+    text-decoration: none;
+    color: #030303;
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+.txt-box a:hover {
+    color: #03045e;
+    font-weight: 800;
+}
+
 @media (max-width: 768px) {
     .send .flex {
         flex-direction: column;
