@@ -6,6 +6,10 @@
     <!-- ICONES FONT AWESOME -->
     <script src="https://kit.fontawesome.com/745489aff3.js" crossorigin="anonymous"></script>
     <!-- FIM -->
+    <!-- Animação AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- FIM -->
     <title>Criando seu lugar na internet</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsividade.css">
@@ -15,13 +19,13 @@
     <section id="desire" class="desire">
           <div class="container">
             <div class="flex">
-              <div class="txt-leads">
+              <div class="txt-leads" data-aos="zoom-in">
                 <h1 class="title">Sua marca merece destaque dentro da internet</h1>
                 <p>Estar presente na internet nos dias atuais é importantíssimo, pois é uma forma de você ser visto por pessoas que estão procurando por aquilo que você está vendendo</p>
                 <p>Seja um produto ou serviço, possuir um site ou uma landing page, também chamada de página de captura irá trazer para o seu negócio mais alcance e visibilidade, pois você pode compartilhar o link em suas redes sociais, com os amigos e aparecer nos mecanismos de buscas.</p>
               </div><!-- txt-leads -->
-              <div class="mockup-box">
-                <img class="imagem" src="assets/images/mockup.png" />
+              <div class="mockup-box" data-aos="flip-right">
+                <img class="imagem" src="assets/images/mockup.webp" alt="imagem de um notebook flutuando."/>
               </div>
             </div><!-- flex -->
           </div><!-- container -->
@@ -41,14 +45,14 @@
     <section id="search" class="search">
           <div class="container">
             <div class="flex">
-              <div class="txt-leads">
+              <div class="txt-leads" data-aos="zoom-in">
                 <h2 class="subtitle">Qual a diferença de um site e uma landing page?</h2>
                 <p>Sites reunem todas as informações do seu negócio, sua história, seus produtos e serviços. É a concentração do que você tem a oferecer para seu cliente.</p>
                 <p>Landing Pages têm um objetivo principal, é usada para anunciar algo específico, como por exemplo um produto ou um serviço.</p>
                 <p>Esta página que você está lendo, é uma landing page, pois meu objetivo com ela é fazer uma pesquisa com pessoas como você que está buscando profissionais que sabem construir sites e landing pages.</p>
               </div><!-- txt-leads -->
               <!-- FORMULÁRIO -->
-              <form action="https://formsubmit.co/contato@rebecafelicissimo.com.br" method="POST">
+              <form action="https://formsubmit.co/contato@rebecafelicissimo.com.br" method="POST" data-aos="zoom-in-left">
                 <h3>Deixe seus dados</h3>
                 <p>Dessa forma irei entrar em contato para um bate papo e entender como posso ajudá-lo na criação do seu site ou landing page.</p>
                 <div class="form-box">
@@ -86,14 +90,14 @@
     <section id="team" class="team">
       <div class="container">
         <div class="flex">
-          <div class="txt-leads">
+          <div class="txt-leads" data-aos="zoom-in">
             <h2 class="subtitle">Rebeca Felicissimo</h2>
             <p>Sempre fui apaixonada por tecnologia e acho incrível construir sites do zero, pois ao longo do projeto vamos vendo-o tomando forma e cada título, parágrafo e imagem vão sendo inseridos em suas posições e no final algo lindo é criado.</p>
             <p>Poder ajudar você a tirar sua ideia do papel e transformá-la em realidade levando sua empresa ou produto para todo mundo conhecer é extremamente satisfatório.</p>
             <p>Conte comigo para essa jornada. Deixe seus dados de contato através do formulário acima ou me chama no whatsapp clicando no botão verdinho ai do lado. &#x1F603</p>
           </div><!-- txt-leads -->
-          <div class="mockup-box">
-            <img class="imagem" src="assets/images/rebeca.png" />
+          <div class="mockup-box" data-aos="zoom-in-right">
+            <img class="imagem" src="assets/images/rebeca.webp" alt="imagem do rosto da Rebeca em preto e branco."/>
           </div>
           <!-- <div class="mockup-box">
             <img class="rebeca" src="assets/images/rebeca01.jpg" />
@@ -119,6 +123,7 @@
   href="https://api.whatsapp.com/send?phone=5579991601454"
   class="btn-whatsapp"
   target="_blank"
+  aria-label="imagem do ícone do whatsapp"
   >
   <img
     class="zap"
@@ -135,9 +140,9 @@
   <div class="container">
     <div class="flex">
       <div class="contatos">
-        <a href="mailto:rebeca.felicissimo@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:rebeca.felicissimo@gmail.com" target="_blank" aria-label="ícone de email"><i class="fa-solid fa-envelope"></i></a>
         <!--  -->
-        <a href="https://api.whatsapp.com/send?phone=5579991601454" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5579991601454" target="_blank" aria-label="ícone do whatsaoo"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
       <!-- <div class="politicas">
         <a href="./pages/politicas.html" target="_blank">Política de Uso</a>
@@ -149,6 +154,8 @@
       <p>2023</p>
     </div>
   </div>
-</footer>   
+</footer>  
+ <!--Script -->
+ <script src="./js/script.js"></script>
 </body>
 </html>
