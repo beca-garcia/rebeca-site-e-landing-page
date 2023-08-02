@@ -25,7 +25,10 @@ body {
 }
 
 .flex {
-    display: flex;
+    display: flex;    
+}
+
+#send .flex {
     align-items: center;
     justify-content: center;
     gap: 4rem;

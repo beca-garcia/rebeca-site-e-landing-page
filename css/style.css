@@ -68,36 +68,6 @@ p {
     margin-bottom: 1.6rem;
 }
 
-/* SEPARADOR DE SEÇÃO */
-.sectionSeparation {
-    padding-block: 3.2rem;
-}
-
-.lines {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
-
-.line-1 {
-    width: 2.4rem;
-    height: 2.4rem;
-    border-radius: 50%;
-    background: var(--line-color01);
-}
-
-.line-2 {
-    width: 28rem;
-    height: 2px;
-    background: var(--line-color02);
-}
-
-.line-3 {
-    width: 20rem;
-    height: 2px;
-    background: var(--line-color02);
-}
-
 /* DESIRE */
 section#desire {
     padding-top: 5.6rem;
@@ -211,6 +181,56 @@ button:hover {
     border-radius: 20px;
     box-shadow: 2px 2px 8px var(--shadow);
     animation: none;
+}
+
+/* TRABALHOS REALIZADOS */
+.work .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rolagem-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rolagem-box {
+    width: 250px;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 20px;
+    transition: 10s;
+}
+
+.rolagem-box:hover {
+    background-position: 100% 100%;
+}
+
+.imagem-1 {
+    background-image: url(../assets/images/lp-agil-imagem.png);
+}
+.rolagem-container a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--txt-color);
+    text-decoration: none;
+    padding-top: 1.2rem;
+}
+
+/* EMPRESAS ATENDIDAS */
+.company .flex {
+    flex-direction: column;
+}
+
+.empresas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* BOTÃO WHATSAPP */

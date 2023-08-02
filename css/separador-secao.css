@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --line-color01: #13293d;
+    --line-color02: #006494;    
+}
+
+/* SEPARADOR DE SEÇÃO */
+.lines {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.line-1 {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: var(--line-color01);
+}
+
+.line-2 {
+    width: 28rem;
+    height: 2px;
+    background: var(--line-color02);
+}
+
+.line-3 {
+    width: 20rem;
+    height: 2px;
+    background: var(--line-color02);
+}
