@@ -11,3 +11,5 @@ Paleta de Cores
 #247ba0
 #1b98e0
 #e8f1f2
+
+font-weight: 100 ao 900

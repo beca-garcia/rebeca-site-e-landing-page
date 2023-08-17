@@ -143,6 +143,18 @@ form .form-box {
     border-bottom: 2px solid var(--form-line); 
 }
 
+.form-box.checkbox  {
+    display: flex;
+    flex-direction: row;
+    margin: 2.4rem 0;
+    gap: 0.8rem;
+}
+
+.form-box.checkbox a {
+    font-weight: 700;
+    color: var(--headline);
+}
+
 button {
     padding: 1.6rem 5.6rem;
     border: none;
@@ -212,7 +224,7 @@ button:hover {
 }
 
 .imagem-1 {
-    background-image: url(../assets/images/lp-agil-imagem.png);
+    background-image: url(../assets/images/lp-agil-imagem.webp);
 }
 .rolagem-container a {
     font-size: 1.6rem;
